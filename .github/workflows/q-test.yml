@@ -23,3 +23,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if [ -f q-test/requirements.txt ]; then pip install -r q-test/requirements.txt; fi
+    
+    - name: Run q-test
+      run: |
+        python q-test/q_test.py
