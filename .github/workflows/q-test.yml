@@ -27,3 +27,5 @@ jobs:
     - name: Run q-test
       run: |
         python q-test/q_test.py
+```   env:
+        QISKIT_IBM_TOKEN: ${{ secrets.QISKIT_IBM_TOKEN }}
