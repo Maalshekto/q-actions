@@ -17,6 +17,7 @@ from qiskit_ibm_runtime import QiskitRuntimeService
 
 # Create empty circuit
 example_circuit = QuantumCircuit(2)
+example_circuit.h(0)
 example_circuit.measure_all()
  
 # backend = service.least_busy(operational=True, simulator=False)
