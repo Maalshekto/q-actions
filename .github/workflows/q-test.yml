@@ -18,6 +18,14 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: 3.11
+    
+    - name: Install gcc-10 and g++-10
+      run: |
+        sudo apt update
+        sudo apt install gcc-10 g++-10
+        shell: bash
+        
+
 
     - name: Install dependencies
       run: |
